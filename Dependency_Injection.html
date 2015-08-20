@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+
+        function move(car, name) {
+            // car is a dependency and name is a parameter
+        }
+
+        var DI = function () {
+
+        };
+
+        DI.register('name of service', {
+            // object which will behave as the singleton for the service
+        });
+
+        DI.resolve('name of service'); // this will return the service object
+
+        // the following method can invoke the function with the parameters and
+        // resolve the dependencies or just return a bound function with the
+        // dependencies and parameters bound to it
+        DI.inject(move, name);
+
+    </script>
+</head>
+<body>
+    <ul>
+        <li>Build a DI registration service</li>
+        <li>Injector method (function which injects the dependency and returns/invokes a function)</li>
+        <li>Test Cases to check it (May / May not be formal - Jasmine)</li>
+    </ul>
+</body>
+</html>
